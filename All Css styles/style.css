@@ -2,6 +2,7 @@
     margin: 0;
     font-family: 'Work Sans', sans-serif;
 }
+img
 
 h1,
 h2,
@@ -44,7 +45,8 @@ header {
 .header-section {
     display: flex;
     justify-content: space-between;
-    padding: 63px 0;
+    padding: 63px 30px;
+
 
 }
 
@@ -86,13 +88,15 @@ header {
 
 .banner img {
     margin: 50px 0;
+    width: 100%;
 }
 
 /* quick list section  */
 .quick-list {
     display: flex;
-    margin: 85px auto;
+    margin: 85px auto 130px auto;
     gap: 73px;
+    
 }
 
 .images {
@@ -122,6 +126,7 @@ header {
 .experience {
     display: flex;
     gap: 146px;
+    
 }
 
 .experience-info h2 {
@@ -158,3 +163,183 @@ header {
     line-height: 26px;
     margin-top: 10px;
 }
+.architect-img img{
+    width: 100%;
+}
+#experience-btn{
+    padding: 46px;
+    margin: -100px;
+}
+
+#experience-btn h2 {
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 70px;
+    text-align: center;
+    color: #FFFFFF;
+   
+}
+
+
+/* service styles */
+
+.services {
+    margin-top: 130px;
+}
+
+.service-boxes {
+    display: flex;
+    gap: 124px;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 240px;
+    width: 240px;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.service h2 {
+    margin: 10px 0;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 53px;
+    color: #424242;
+}
+
+.service p {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #727272;
+}
+
+.sponspores {
+    margin-top: 180px;
+}
+
+.sponsors-logos {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.sponsors-logos img {
+    filter: grayscale(100%);
+}
+
+.copyright {
+    text-align: center;
+    padding: 40px 0;
+    background: #FFF4E7;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    margin: 113px 0 215px 0;
+}
+
+/* ----------------------
+       responsive 
+-------------------------*/
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (max-width: 576px) { 
+    
+    .quick-list-info{
+        width: 100%;
+    }
+    .header-section h2 {
+        font-size: 30px;
+    }
+    .banner h1 {
+        font-size: 50px;
+    }
+    .architect-img img {
+        width: 88%;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (max-width: 768px) {
+    .images img{
+        width: 100%;
+        padding-left:30px ;
+    }
+    .sponsors-logos{
+       flex-direction: column;
+       align-items: center;
+       
+    }
+    .sponsors-logos img{
+        width: 40%;
+        margin-bottom: 20px;
+    }
+    .service-boxes{
+        flex-direction: column;
+        align-items: center;
+    }
+    .experience{
+        flex-direction: column;
+    }
+    #experience-btn{
+        margin: 0;
+    }
+    #experience-btn {
+        margin-left: 30px !important;
+        margin-top: 30px;
+    }
+    .architect-img img {
+        width: 95%;
+        margin: 0 auto;
+        display: block;
+    }
+   
+}
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (max-width: 992px) { 
+    .images {
+        grid-template-columns: repeat(1, 1fr)
+    }
+    .header-section ul {
+        flex-direction: column;
+    }
+    .header-section ul li {
+        margin-top: 20px;
+    }   
+    .experience-info .p{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .experience-info h2{
+        margin-left: 20px;
+    }
+   
+   
+ }
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 769px) and (max-width:1200px) {
+    #experience-btn h2 {
+        font-size: 50px;
+    }
+    #experience-btn{
+        padding: 20px;
+    }
+    .service{
+        height: 180px;
+        width: 18%;
+    }
+    .service-boxes{
+        gap: 5%;
+    }
+ }
